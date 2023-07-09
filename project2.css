@@ -1,0 +1,83 @@
+* {
+    margin : 0;
+    padding :0;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    color : #333;
+    position: relative;
+    height : 100vh;
+    background:linear-gradient(to top left,#28b487,#7dd56f);
+    display : flex;
+    align-items: flex-start ;
+    justify-content: space-evenly;
+}
+
+.hidden {
+    display: none;
+}
+
+.show-model {
+    margin: 5rem 0;
+    border : none ;
+    outline: none;
+    color : #444;
+    padding : 1.5rem 3.5rem;
+    border-radius: 10rem;
+    font-weight: 600;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+
+.model {
+    width : 50rem ;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    padding : 6rem;
+    border-radius: 10px;
+    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+
+.close-model {
+    border : none ;
+    background: none;
+    font-size: 5rem;
+    position: absolute;
+    top : 1.2rem;
+    right : 2rem;
+    color : #444;
+    cursor: pointer;
+}
+
+h1 {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 1.6rem;
+    line-height: 1.4;
+}
+
+.overlay {
+    position: absolute;
+    top : 0;
+    left : 0;
+    width : 100%;
+    height : 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    z-index: 5;
+
+}
